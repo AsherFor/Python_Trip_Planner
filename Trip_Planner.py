@@ -57,7 +57,7 @@ def time_change():
     if difference_hrs_midnight < 0:
         print(f'Desination time is {adjusted_midnight}:00, in the previous day from midnight 0:00.')
     print('*********************************')
-#Part 4
+#Part 4 Country Area
 def country_area():
     print("\n")
     size_country = int(input('What is the square area of your destination country in KM2? '))
