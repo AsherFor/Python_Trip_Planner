@@ -34,33 +34,30 @@ def time_change():
     # convert the string to a int
     int_time_difference = int(time_difference)
 
-    # calculate from noon
     difference_hrs_noon = noon + int_time_difference
     difference_hrs_midnight = midnight + int_time_difference
 
-    # these two condisions are on different days
     # use % to get how many hours over into the next day could be + or -
     adjusted_noon = difference_hrs_noon % 24
     adjusted_midnight = difference_hrs_midnight % 24
-    print(adjusted_noon, 'is adjusted noon')
-    print(adjusted_midnight, 'is adjusted midnight')
+
     #For noon
     if difference_hrs_noon <= 24 and difference_hrs_noon >= 0:
-        print(f'Destination time is {difference_hrs_noon}:00 from noon 12:00')
+        print(f'Destination time is {difference_hrs_noon}:00 from noon 12:00.')
     if difference_hrs_noon > 24:
-        print (f'Destination time is {adjusted_noon}:00 hrs(s) on the next day from noon 12:00')
+        print (f'Destination time is {adjusted_noon}:00 hrs(s) on the next day from noon 12:00.')
     if difference_hrs_noon < 0:
         print(f'Desination time is {adjusted_noon}:00, in the previous day from noon 12:00.')
 
     #For Midnight
     if difference_hrs_midnight <= 24 and difference_hrs_midnight >= 0:
-        print(f'Destination time is {difference_hrs_midnight}:00 from midnight 0:00')
+        print(f'Destination time is {difference_hrs_midnight}:00 from midnight 0:00.')
     if difference_hrs_midnight > 24:
-        print (f'Destination time is {adjusted_midnight}:00 hrs(s) on the next day from midnight 0:00')
+        print (f'Destination time is {adjusted_midnight}:00 hrs(s) on the next day from midnight 0:00.')
     if difference_hrs_midnight < 0:
         print(f'Desination time is {adjusted_midnight}:00, in the previous day from midnight 0:00.')
     print('*********************************')
-
+#Part 4
 def country_area():
     print("\n")
     size_country = int(input('What is the square area of your destination country in KM2? '))
