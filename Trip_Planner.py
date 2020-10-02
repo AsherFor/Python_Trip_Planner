@@ -15,7 +15,7 @@ print("\n")
 def travel_time_budget():
     integer_number_of_days = int(input("How many days are you going to spend travelling? "))
     money_spent = int(input("What is your total budget for the trip in USD? "))
-    currency_symbol = input("What is the currency symbol for their destination? ")
+    currency_symbol = input("What is the currency symbol for your destination? ")
     conversion_for_money = float(input(f'How many {currency_symbol} are there in 1 USD? '))
 
     print("\n")
